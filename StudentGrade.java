@@ -1,6 +1,3 @@
-// StudentGrade.java
-
-// StudentGrade.java
 // A program to calculate Student Grade
 /*
 *Olatunji Israel Oladotun
@@ -13,30 +10,28 @@ import java.util.Scanner;
 public class StudentGrade {
 	public static void main(String[] args) {
 
-		System.out.println("Welcome to Scholarly Academy.");
-		System.out.print("Enter your grade: ");	
-		
-
 		Scanner input = new Scanner(System.in);
 	
-		int grade;
-		grade = input.nextInt();
+		int grade, score ;
 		
+		System.out.println("Welcome to Scholarly Academy.");
+		System.out.print("Enter your grade: ");	
+		grade = input.nextInt();
+		score = grade / 10;
 
-		if (grade >= 70)
+		System.out.printf("The student score is %d%n", score);
+
+		if (score >= 7)
 		System.out.println("Your grade is A, An Excellent Grade");
 
-		if (grade >= 60)
+		if (score == 6)
 		System.out.println("Your grade is B, Very Good Grade");
 		
-		if (grade >= 50)
+		if (score == 5)
 		System.out.println("Your grade is C, Good Grade");
 
-		if (grade >= 45)
-		System.out.println("Your grade is D, Poor Grade");
-
-		if (grade >= 40)
-		System.out.println("Your grade is E, You can do better.");
+		if (score <= 4)
+		System.out.println("Poor Grade , You can do better.");
 
 	} //End method main
 } //End class StudentGrade

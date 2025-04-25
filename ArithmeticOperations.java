@@ -6,7 +6,7 @@
 *19:39pm
 */
 
-import java.util.Scanner;`
+import java.util.Scanner;
 
 public class ArithmeticOperations {
 	public static void main(String[] args) {
@@ -33,6 +33,7 @@ public class ArithmeticOperations {
 		System.out.printf("The sum of %d and %d is %d%n", number1 ,number2, sum ); 
  		System.out.printf("The difference of %d and %d is %d%n", number1 ,number2, difference);
 		System.out.printf("The product of %d and %d is %d%n", number1 ,number2, multiplication);
+
 
 	} // End Method main
 } // End Class ArithmeticOperations

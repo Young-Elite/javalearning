@@ -32,7 +32,8 @@ public class Task1 {
                     average,
                     product,
 		    smallest,
-		    largest;
+		    largest,
+			lare, sall;
 		
 		sum = num1 + num2 + num3;
 		average = ((num1 + num2 + num3)/3);
@@ -49,6 +50,9 @@ public class Task1 {
 		largest = num2;
 		if (num3 > largest)
 		largest = num3;	
+
+		lare = Math.max(num1, Math.max(num2,num3));
+		sall = Math.min(num1, Math.min(num2,num3));
 	
 		System.out.print("Calculations. ");
 		System.out.printf("\n\nThe sum of the three numbers is %d.%n" , sum);
@@ -56,6 +60,8 @@ public class Task1 {
 		System.out.printf("The product of the three numbers is %d.%n" , product);
 		System.out.printf("The smallest number is %d.%n" , smallest);
 		System.out.printf("The largest number is %d.%n" , largest);
+		System.out.printf("The smallest number is %d.%n" , sall);
+		System.out.printf("The largest number is %d.%n" , lare);
 
 		
 
